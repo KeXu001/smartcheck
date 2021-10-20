@@ -5,6 +5,9 @@ Reads SMART results (--all) from `stdin`
 Checks a number of SMART attributes for bad values and errors
 
 Exits with code equal to number of errors
+
+Example usage:
+  sudo smartctl -a /dev/sda -d megaraid,0 | python3 smartcheck.py
 """
 
 import io
