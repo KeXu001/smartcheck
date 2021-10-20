@@ -43,7 +43,7 @@ def get_attributes_table(lines):
   
   section = get_section(lines, hint)
   
-  stream = io.StringIO('\n'.join(section))
+  stream = io.StringIO(''.join(section))
   
   table = pd.read_fwf(stream)
   
